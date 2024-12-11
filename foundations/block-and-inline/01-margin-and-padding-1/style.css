@@ -1,21 +1,24 @@
 body {
   max-width: 600px;
-  margin: 0 auto;
+
+  /* auto for left-right values means center-align.
+  This means the body element is center-aligned. */
+  margin: 0 auto;  
 }
 
 .one {
   background: pink;
   border: 3px solid blue;
   /* CHANGE ME */
-  padding: 0px;
-  margin: 0px;
+  padding: 32px;
+  margin: 12px;
 }
 
 .two {
   background: lightblue;
   border: 3px solid purple;
   /* CHANGE ME */
-  margin-bottom: 0px;
+  margin-bottom: 48px;
 }
 
 .three {
@@ -23,6 +26,19 @@ body {
   border: 3px solid brown;
   width: 200px;
   /* CHANGE ME */
-  padding: 0px;
-  margin-left: 0px;
+  padding: 32px;
+  /* margin-left: 330px; */
+  margin-left: auto;
+
+  /* Extension: Is there a better way to right-align?
+  https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left#values
+  
+  By setting margin-left to auto, it is given a share of the unused horizontal space.
+  For body, we notice that max width is 600px. 
+  
+  The divs are contained within the body, the max width for them 
+  is 600px. So after taking into account the border, width and padding,
+  the remaining horizontal space (all of it, in this case) is given to 
+  the left margin. 
+  */
 }
