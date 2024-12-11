@@ -1,3 +1,14 @@
+/* Tip to compare history of a single file across git commits:
+1. Right click and open timeline
+2. Filter by git commits
+3. Right click on the old version (select for compare)
+4. Right click on the new version (compare with selected)
+
+Note: If you simply left click a particular git commit, it will compare the commit
+directly preceding the left clicked commit to the left clicked commit itself.
+ */
+
+
 body {
   background: #eee;
   font-family: sans-serif;
@@ -25,6 +36,7 @@ body {
 }
 
 .button-container {
+  text-align: center;
   background: #e3f4ff;
   padding: 8px;
 }
