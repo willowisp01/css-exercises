@@ -1,6 +1,26 @@
+/* 
+(Bring up the index.html side by side)
+
+Notice that the header div has flex display. 
+
+Hence, the left link and right links div, as well as the logo are
+directly affected by it. 
+
+Since divs take the size of their content, div fits
+exactly around the uls (so the uls themselves are center-aligned.)
+
+We set ul itself to be flex too, such that each li
+is directly affected by it. 
+
+*/
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  align-items: center;
 }
 
 .logo {
@@ -13,7 +33,10 @@
 
 ul {
   /* this removes the dots on the list items*/
+  display: flex;
   list-style-type: none;
+  padding: 0;
+  gap: 10px;
 }
 
 a {
